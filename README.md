@@ -76,7 +76,7 @@ Model weights: [huggingface.co/Afshanqasim525/qwen25-1.5b-parcel-normalizer](htt
 ## Limitations (honest, not hedged)
 
 - Training data comes from only two Illinois counties. The eval shows real generalization to three other states, but performance would likely improve with more geographic diversity in training data.
-- This is a proof-of-concept demonstrating where narrow-task specialization wins, not a production-ready system — a real deployment would need broader training data and more rigorous edge-case handling.
+- This is a proof-of-concept demonstrating where narrow-task specialization wins, not a production-ready system ,a real deployment would need broader training data and more rigorous edge-case handling.
 - The "messy" input noise is synthetically generated from real underlying data (real addresses/owners/parcel IDs, synthetic corruption). Real-world noise from OCR, scraped listings, or legacy CRM exports may include patterns this corruption function doesn't simulate.
 - I originally planned to benchmark against Gemini 3.1 Pro as a cost-effective option consistent with the challenge's named models, but hit a regional free-tier access restriction on the Gemini API unrelated to usage volume. I used Claude Opus 4.8 via the standard API instead, which is also one of the three named models in the challenge.
 
