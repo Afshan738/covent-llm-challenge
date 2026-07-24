@@ -1,0 +1,40 @@
+{
+  "n_test_pairs": 300,
+  "held_out_counties": [
+    "Denver",
+    "Maricopa",
+    "Travis"
+  ],
+  "fine_tuned_qwen25_1_5b": {
+    "n": 300,
+    "valid_json_rate": 1.0,
+    "full_record_exact_match_9_fields": 0.0,
+    "per_field_accuracy": {
+      "situs_address": 0.22,
+      "situs_city": 0.8,
+      "situs_state": 0.81,
+      "situs_zip": 0.4933,
+      "owner_name": 0.14,
+      "owner_mailing_address": 0.1167,
+      "owner_mailing_city": 0.5333,
+      "owner_mailing_state": 0.4933,
+      "owner_mailing_zip": 0.3633
+    }
+  },
+  "claude_opus_4_8": {
+    "n": 300,
+    "valid_json_rate": 1.0,
+    "full_record_exact_match_9_fields": 0.0033,
+    "per_field_accuracy": {
+      "situs_address": 0.1867,
+      "situs_city": 0.9933,
+      "situs_state": 0.9467,
+      "situs_zip": 0.9933,
+      "owner_name": 0.5933,
+      "owner_mailing_address": 0.3467,
+      "owner_mailing_city": 0.3633,
+      "owner_mailing_state": 0.3633,
+      "owner_mailing_zip": 0.3567
+    }
+  }
+}
